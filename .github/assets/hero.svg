@@ -6,10 +6,9 @@
     <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00D1FF"/><stop offset="1" stop-color="#9B6DFF"/></linearGradient>
     <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#00D1FF" stop-opacity="0.22"/><stop offset="1" stop-color="#9B6DFF" stop-opacity="0"/></linearGradient>
     <clipPath id="rightStage"><path d="M604 0H900V310H530L604 0Z"/></clipPath>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12"/></filter>
-    <!-- Geometry copied verbatim from canonical-refs/canonicals/manzan/symbol.svg.
-         geometryVersion 1.0.0 · sha256 686f5ef1c82072adfd3a77545e11f33428e9b7d94c87db42afb50a8e0f59f4d3 -->
-    <path id="manzanCanonical" d="M75 344L205 454L207 410L179 388V218L141 186V320L155 332V360L109 328V124L256 246L403 124V328L357 360V332L371 320V186L333 218V388L305 410L307 454L437 344V48L256 196L75 48V344Z"/>
+    <!-- Official Manzan.GG composition from manzan-ref(3).zip.
+         canonical-refs:manzan@1.0.0 · preset:manzan-gg -->
+    <path id="manzanOfficial" d="M75 344L205 454L207 410L179 388V218L141 186V320L155 332V360L109 328V124L256 246L403 124V328L357 360V332L371 320V186L333 218V388L305 410L307 454L437 344V48L256 196L75 48V344Z"/>
   </defs>
 
   <rect x="1" y="1" width="898" height="308" rx="10" fill="url(#bg)" stroke="#173549"/>
@@ -17,11 +16,10 @@
     <path d="M604 0H900V310H530L604 0Z" fill="#0B1020"/>
     <path d="M640 -20H900V330H557L640 -20Z" fill="#9B6DFF" fill-opacity="0.055"/>
     <path d="M676 -20H900V330H594L676 -20Z" fill="#00D1FF" fill-opacity="0.04"/>
-    <circle cx="776" cy="155" r="122" stroke="#00D1FF" stroke-opacity="0.14"/>
-    <circle cx="776" cy="155" r="94" stroke="#9B6DFF" stroke-opacity="0.22" stroke-dasharray="5 8"/>
-    <g transform="translate(636 15) scale(0.55)">
-      <use href="#manzanCanonical" fill="#00D1FF" opacity="0.28" filter="url(#softGlow)"/>
-      <use href="#manzanCanonical" fill="#00D1FF" stroke="#9B6DFF" stroke-width="7" stroke-linejoin="miter"/>
+    <g transform="translate(631 22) scale(0.52)">
+      <rect width="512" height="512" rx="256" fill="#08070D"/>
+      <use href="#manzanOfficial" transform="translate(48.64 48.64) scale(0.81)" fill="none" stroke="#9B6DFF" stroke-width="14" stroke-linejoin="miter" stroke-miterlimit="20"/>
+      <use href="#manzanOfficial" transform="translate(48.64 48.64) scale(0.81)" fill="#00D1FF"/>
     </g>
   </g>
 
