@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 512 512"
+     role="img"
+     aria-labelledby="manzan-title"
+     shape-rendering="geometricPrecision">
+  <title id="manzan-title">Símbolo Manzan</title>
+  <path
+    fill="currentColor"
+    d="M75 344L205 454L207 410L179 388V218L141 186V320L155 332V360L109 328V124L256 246L403 124V328L357 360V332L371 320V186L333 218V388L305 410L307 454L437 344V48L256 196L75 48V344Z"/>
+</svg>
